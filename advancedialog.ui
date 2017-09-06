@@ -1,0 +1,2886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdvanceDialog</class>
+ <widget class="QDialog" name="AdvanceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>321</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Advance settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#AdvanceDailog{border-image: url(:/images/images/mainStacked.png);}</string>
+  </property>
+  <widget class="QStackedWidget" name="stacked_advanced">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="account">
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="New">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>New Connect</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_05">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>180</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/delete.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/delete_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user06">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>310</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(198, 209, 255);
+	color: rgb(5, 106, 183);
+}
+QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user02">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>310</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(198, 209, 255);
+	color: rgb(5, 106, 183);
+}
+QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_04">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>150</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/delete.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/delete_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_01">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>60</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/delete.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/delete_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user04">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>310</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(198, 209, 255);
+	color: rgb(5, 106, 183);
+}
+QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="USBcheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>Redirect USB Mass Storage</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_06">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>210</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/delete.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/delete_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_03">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>120</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/delete.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/delete_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user05">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>310</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(198, 209, 255);
+	color: rgb(5, 106, 183);
+}
+QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user01">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>310</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(198, 209, 255);
+	color: rgb(5, 106, 183);
+}
+QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_02">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>90</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/delete.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/delete_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user03">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>310</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(198, 209, 255);
+	color: rgb(5, 106, 183);
+}
+QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="urbdrc_checkbox">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>300</y>
+       <width>201</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>Redirect other USB devices</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="otherUsbInfo">
+     <property name="geometry">
+      <rect>
+       <x>218</x>
+       <y>291</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_06">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>210</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/modify.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/modify_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_05">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>180</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/modify.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/modify_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_02">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>90</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/modify.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/modify_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_03">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>120</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/modify.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/modify_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_01">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>60</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/modify.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/modify_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_04">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>150</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/modify.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/modify_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user00">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>321</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(5, 106, 183);
+}
+/*QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}*/</string>
+     </property>
+     <property name="text">
+      <string>ConnectName  ServerIP  UserName  Passwd</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>120</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>180</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>210</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>60</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user00_1">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>30</y>
+       <width>221</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(5, 106, 183);
+}
+/*QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}*/</string>
+     </property>
+     <property name="text">
+      <string>ATLogin  Del    Mod    RELogin</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_07">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>240</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/delete.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/delete_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="edit_07">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>240</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-image: url(:/images/images/modify.png);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/modify_press.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="user07">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>310</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(198, 209, 255);
+	color: rgb(5, 106, 183);
+}
+QLineEdit:focus{
+	border:2px;
+	border-radius:8px;
+	padding:2px 4px;
+	background-color: rgb(2, 78, 133);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>240</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ContinuecheckBox_1">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>60</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ContinuecheckBox_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>90</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ContinuecheckBox_3">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>120</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ContinuecheckBox_4">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>150</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ContinuecheckBox_5">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>180</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ContinuecheckBox_6">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>210</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ContinuecheckBox_7">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>240</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_8">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>151</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>Forbid Auto Login</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="RemembercheckBox">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>270</y>
+       <width>171</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>Remeber Maual</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>label_1</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_2</zorder>
+    <zorder>New</zorder>
+    <zorder>delete_05</zorder>
+    <zorder>user06</zorder>
+    <zorder>label_3</zorder>
+    <zorder>user02</zorder>
+    <zorder>label_4</zorder>
+    <zorder>delete_04</zorder>
+    <zorder>delete_01</zorder>
+    <zorder>user04</zorder>
+    <zorder>USBcheckBox</zorder>
+    <zorder>delete_06</zorder>
+    <zorder>delete_03</zorder>
+    <zorder>user05</zorder>
+    <zorder>user01</zorder>
+    <zorder>delete_02</zorder>
+    <zorder>user03</zorder>
+    <zorder>urbdrc_checkbox</zorder>
+    <zorder>otherUsbInfo</zorder>
+    <zorder>edit_06</zorder>
+    <zorder>edit_05</zorder>
+    <zorder>edit_02</zorder>
+    <zorder>edit_03</zorder>
+    <zorder>edit_01</zorder>
+    <zorder>edit_04</zorder>
+    <zorder>user00</zorder>
+    <zorder>radioButton_2</zorder>
+    <zorder>radioButton_3</zorder>
+    <zorder>radioButton_4</zorder>
+    <zorder>radioButton_5</zorder>
+    <zorder>radioButton_6</zorder>
+    <zorder>radioButton_1</zorder>
+    <zorder>user00_1</zorder>
+    <zorder>delete_07</zorder>
+    <zorder>edit_07</zorder>
+    <zorder>user07</zorder>
+    <zorder>radioButton_7</zorder>
+    <zorder>ContinuecheckBox_1</zorder>
+    <zorder>ContinuecheckBox_2</zorder>
+    <zorder>ContinuecheckBox_3</zorder>
+    <zorder>ContinuecheckBox_4</zorder>
+    <zorder>ContinuecheckBox_5</zorder>
+    <zorder>ContinuecheckBox_6</zorder>
+    <zorder>ContinuecheckBox_7</zorder>
+    <zorder>radioButton_8</zorder>
+    <zorder>RemembercheckBox</zorder>
+   </widget>
+   <widget class="QWidget" name="network">
+    <widget class="QPushButton" name="B_RefreshNet">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>78</y>
+       <width>101</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="toolTip">
+      <string>Make sure the networks connection...</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Renew</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FIXIP">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>115</y>
+       <width>220</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="inputMask">
+      <string>000.000.000.000; </string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="R_FixIP">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>115</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/radiobutton_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/radiobutton_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>FIX     IP :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="NET_Submit_Button">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>270</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Apply</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="macaddr_label">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>36</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>MAC :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="L_DNS1">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>194</y>
+       <width>120</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>DNS 1:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="NetMask">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>141</y>
+       <width>220</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="inputMask">
+      <string>000.000.000.000; </string>
+     </property>
+     <property name="text">
+      <string>255.255.255.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="L_GateWay">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>167</y>
+       <width>120</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Gateway :</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="R_UseDHCP">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>62</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/radiobutton_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/radiobutton_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>DHCP IP :</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="DNS2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>219</y>
+       <width>220</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="inputMask">
+      <string>000.000.000.000; </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="GateWay">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>167</y>
+       <width>220</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="inputMask">
+      <string>000.000.000.000; </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="L_DNS2">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>221</y>
+       <width>120</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>DNS 2:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DHCP_IP">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>62</y>
+       <width>220</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="midLineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="L_NetMask">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>141</y>
+       <width>120</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>NetMask :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="DNS1">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>193</y>
+       <width>220</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="inputMask">
+      <string>000.000.000.000; </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MAC_addr">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>30</y>
+       <width>200</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="inputMask">
+      <string>HH:HH:HH:HH:HH:HH; </string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="fwupdate">
+    <widget class="QComboBox" name="ImageFileBox">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>120</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/combox_bg.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:30px; 
+
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fwupdate_label">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>42</y>
+       <width>271</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Firmware Update:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="updatepushButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>260</y>
+       <width>128</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/system_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/system_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/system_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Start FW Update</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ImageFolderBox">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/combox_bg.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:30px; 
+
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ImageFileLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>121</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Image File(*.bin) :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ImageFolder_Label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>76</y>
+       <width>101</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Image Folder :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refresh_USB_Btn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>160</y>
+       <width>128</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Reload USB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="restore">
+    <widget class="QCheckBox" name="networkcheckBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>301</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Network</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="devicenamecheckBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>301</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Device Name</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="recoveryButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>260</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Apply</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="settingscheckBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>301</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>General Settings</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="usbrestorecheckBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>160</y>
+       <width>301</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>USB</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="accountcheckBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>190</y>
+       <width>301</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Account</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="loaddefaultlabel">
+     <property name="geometry">
+      <rect>
+       <x>39</x>
+       <y>42</y>
+       <width>291</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>Recovery to Factory Default Settings:</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="password">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>220</y>
+       <width>301</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="text">
+      <string>password</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="passwd">
+    <widget class="QRadioButton" name="bootPassword">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>50</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/radiobutton_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/radiobutton_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>Boot Password</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="userPassword">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>50</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/radiobutton_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/radiobutton_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>User Password</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="systemPassword">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	
+QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/radiobutton_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/radiobutton_check.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>SystemPassword</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedPassword">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>541</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="systemTab">
+      <widget class="QLabel" name="Label7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>30</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>System Password : </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="systemPasswordSave">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>170</y>
+         <width>101</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/images/images/system_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/system_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/system_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>57</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>New Password :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="system_password_confirm">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>79</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label9">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>82</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>Re-Type Password:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="system_password">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>53</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="system_password_old">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>27</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="userTab">
+      <widget class="QLabel" name="Label1">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>30</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>User Password : </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="userPasswordSave">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>170</y>
+         <width>101</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/images/images/system_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/system_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/system_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>57</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>New Password :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="user_password_confirm">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>79</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>82</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>Re-Type Password:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="user_password">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>53</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="user_password_old">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>27</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="bootTab">
+      <widget class="QPushButton" name="bootPasswordSave">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>170</y>
+         <width>101</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-image: url(:/images/images/system_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/system_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/system_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="boot_password_old">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>27</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>82</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>Re-Type Password:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>57</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>New Password :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="boot_password">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>53</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="boot_password_confirm">
+       <property name="geometry">
+        <rect>
+         <x>187</x>
+         <y>79</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Label4">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>30</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	color: rgb(5, 106, 183);</string>
+       </property>
+       <property name="text">
+        <string>Boot Password : </string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>New</tabstop>
+  <tabstop>user01</tabstop>
+  <tabstop>user02</tabstop>
+  <tabstop>user03</tabstop>
+  <tabstop>user04</tabstop>
+  <tabstop>user05</tabstop>
+  <tabstop>user06</tabstop>
+  <tabstop>USBcheckBox</tabstop>
+  <tabstop>urbdrc_checkbox</tabstop>
+  <tabstop>delete_01</tabstop>
+  <tabstop>delete_02</tabstop>
+  <tabstop>delete_03</tabstop>
+  <tabstop>delete_04</tabstop>
+  <tabstop>delete_05</tabstop>
+  <tabstop>delete_06</tabstop>
+  <tabstop>R_UseDHCP</tabstop>
+  <tabstop>R_FixIP</tabstop>
+  <tabstop>B_RefreshNet</tabstop>
+  <tabstop>FIXIP</tabstop>
+  <tabstop>NetMask</tabstop>
+  <tabstop>GateWay</tabstop>
+  <tabstop>DNS1</tabstop>
+  <tabstop>DNS2</tabstop>
+  <tabstop>NET_Submit_Button</tabstop>
+  <tabstop>ImageFolderBox</tabstop>
+  <tabstop>ImageFileBox</tabstop>
+  <tabstop>refresh_USB_Btn</tabstop>
+  <tabstop>updatepushButton</tabstop>
+  <tabstop>settingscheckBox</tabstop>
+  <tabstop>devicenamecheckBox</tabstop>
+  <tabstop>networkcheckBox</tabstop>
+  <tabstop>usbrestorecheckBox</tabstop>
+  <tabstop>accountcheckBox</tabstop>
+  <tabstop>recoveryButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

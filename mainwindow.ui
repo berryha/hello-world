@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>RDP connection</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">#centralWidget{background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(0,2, 68, 255), stop:1 rgba(2, 80, 135, 255));}</string>
+   </property>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>460</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bitstream Charter</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(222, 222, 222);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>452</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/images/bgButton.png);
+color: rgb(222, 222, 222);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="targetcomboBox">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>250</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/bgLineEdit.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow_ymcolor.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:38px; 
+
+}</string>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="maxCount">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>390</y>
+      <width>250</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string>Password</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/images/bgLineEdit.png);</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="configure">
+    <property name="geometry">
+     <rect>
+      <x>506</x>
+      <y>452</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/images/bgButton.png);
+color: rgb(222, 222, 222);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>340</y>
+      <width>250</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string>Username</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/images/bgLineEdit.png);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sysinfo">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>572</y>
+      <width>51</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*border-image: url(:/images/images/bgButton.png);*/
+color: rgb(222, 222, 222);
+border-image: url(:/images/images/systeminfo..png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/icon/settings.png</normaloff>:/icon/icon/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>General Settings</string>
+   </property>
+  </action>
+  <action name="actionAdvance_Settings">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/icon/system_lock.png</normaloff>:/icon/icon/system_lock.png</iconset>
+   </property>
+   <property name="text">
+    <string>Administrative Settings</string>
+   </property>
+   <property name="toolTip">
+    <string>Administrative Settings</string>
+   </property>
+  </action>
+  <action name="actionTools">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/icon/wrench.png</normaloff>:/icon/icon/wrench.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tools</string>
+   </property>
+   <property name="toolTip">
+    <string>Tools</string>
+   </property>
+  </action>
+  <action name="actionSystem_Information">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/icon/Info.png</normaloff>:/icon/icon/Info.png</iconset>
+   </property>
+   <property name="text">
+    <string>System Information</string>
+   </property>
+  </action>
+  <action name="actionShut_down">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/icon/reboot3.png</normaloff>:/icon/icon/reboot3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Shut down</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>targetcomboBox</tabstop>
+  <tabstop>username</tabstop>
+  <tabstop>password</tabstop>
+  <tabstop>commandLinkButton</tabstop>
+  <tabstop>configure</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>ConnectToServer()</slot>
+  <slot>on_Settings()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingDialog</class>
+ <widget class="QDialog" name="SettingDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>321</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="display">
+    <widget class="QGroupBox" name="resolution_label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>541</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="title">
+      <string>RDP settings</string>
+     </property>
+     <widget class="QComboBox" name="resolution_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>60</y>
+        <width>160</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bitstream Charter</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/combox_bg.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:30px; 
+
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="maxVisibleItems">
+       <number>8</number>
+      </property>
+      <property name="maxCount">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="resolution_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>60</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bitstream Charter</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Auto</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="singleM_radioButton">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>60</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	
+QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/radiobutton_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/radiobutton_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Clone mode</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="multiM_radioButton">
+      <property name="geometry">
+       <rect>
+        <x>139</x>
+        <y>60</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	
+QRadioButton{color: rgb(5, 106, 183);outline:none;}
+QRadioButton::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QRadioButton::indicator::unchecked {	
+	border-image: url(:/images/images/radiobutton_normal.png);
+}
+QRadioButton::indicator::checked {
+	border-image: url(:/images/images/radiobutton_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Extension mode</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="dualM_checkBox">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>60</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Auto</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_language">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>20</y>
+        <width>151</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Language select</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="language">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>20</y>
+        <width>160</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bitstream Charter</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/combox_bg.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:30px; 
+
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="maxVisibleItems">
+       <number>8</number>
+      </property>
+      <property name="maxCount">
+       <number>8</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>中文</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>English</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QCheckBox" name="audio_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>281</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Enable Audio Input and Output</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bandwidth_label">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>100</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bandwidth:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="bandwidth_combo">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>100</y>
+        <width>160</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/combox_bg.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:30px; 
+
+}</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="hotkey_comboBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>155</y>
+        <width>160</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bitstream Charter</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/combox_bg.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:30px; 
+
+}</string>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="maxVisibleItems">
+       <number>13</number>
+      </property>
+      <property name="maxCount">
+       <number>13</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hotkeylabel">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>158</y>
+        <width>301</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Remote Connection Breakdown Hotkey:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="evor_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>100</y>
+        <width>116</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Enable EVOR</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>dualM_checkBox</zorder>
+     <zorder>resolution_checkBox</zorder>
+     <zorder>resolution_comboBox</zorder>
+     <zorder>singleM_radioButton</zorder>
+     <zorder>multiM_radioButton</zorder>
+     <zorder>label_language</zorder>
+     <zorder>language</zorder>
+     <zorder>audio_checkBox</zorder>
+     <zorder>bandwidth_label</zorder>
+     <zorder>bandwidth_combo</zorder>
+     <zorder>hotkey_comboBox</zorder>
+     <zorder>hotkeylabel</zorder>
+     <zorder>evor_checkBox</zorder>
+    </widget>
+    <widget class="QGroupBox" name="connection_group">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>541</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="title">
+      <string> Other Settings</string>
+     </property>
+     <widget class="QCheckBox" name="Auto_power_on_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>151</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Auto power on</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="wol_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Wake on LAN</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="wokbdmouse_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>240</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Wake on Keyboard/Mouse</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="apply_display_button">
+     <property name="geometry">
+      <rect>
+       <x>419</x>
+       <y>284</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Apply</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="titleUser">
+    <widget class="QGroupBox" name="powergroupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>541</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">	color: rgb(5, 106, 183);</string>
+     </property>
+     <property name="title">
+      <string> User settings</string>
+     </property>
+     <widget class="QCheckBox" name="autologin_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>60</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Auto-Login</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="remember_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>90</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Remember Me</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="devicename_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Device Name :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="devicenamelineEdit">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>16</number>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Failed_reconnection_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>221</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{color: rgb(5, 106, 183);outline:none;}
+QCheckBox::indicator { 
+	width: 15px;
+	height: 15px;
+}
+QCheckBox::indicator::unchecked {	
+	border-image: url(:/images/images/checkbox_normal.png);
+}
+QCheckBox::indicator::checked {
+	border-image: url(:/images/images/checkbox_check.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Failed Reconnection</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="apply_button">
+     <property name="geometry">
+      <rect>
+       <x>419</x>
+       <y>280</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bitstream Charter</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Apply</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

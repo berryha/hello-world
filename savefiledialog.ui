@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SavefileDialog</class>
+ <widget class="QDialog" name="SavefileDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>278</width>
+    <height>153</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>128</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="saveto">
+     <property name="text">
+      <string>Save to :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QComboBox" name="savecomboBox">
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	selection-background-color: rgb(179, 45, 60);
+	border-image: url(:/images/images/combox_bg.png);
+	border-right-color: rgb(0, 85, 0);
+	border-bottom-color: rgb(0, 0, 255);
+	border-left-color: rgb(255, 0, 255);
+	border-top-color: rgb(0, 255, 0);
+}
+QComboBox::down-arrow{
+	border-image: url(:/images/images/combox_downarrow.png);
+}
+QComboBox::drop-down{
+    border-left-style: solid; /* just a single line */
+   	width: 20px;
+	height:30px; 
+
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="filenamelabel">
+     <property name="text">
+      <string>Filename:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QLineEdit" name="filenamelineEdit">
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/combox_bg.png);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>eventlog.txt</string>
+     </property>
+     <property name="maxLength">
+      <number>16</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="cancelButton">
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="saveButton">
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-image: url(:/images/images/button_normal.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:focus{
+	border-image: url(:/images/images/button_pressed.png);
+	color: rgb(175, 210, 255);
+}
+QPushButton:pressed{
+	border-image: url(:/images/images/button_click.png);
+	color: rgb(175, 210, 255);
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>savecomboBox</tabstop>
+  <tabstop>filenamelineEdit</tabstop>
+  <tabstop>saveButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
