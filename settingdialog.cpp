@@ -274,6 +274,8 @@ void SettingDialog::save_settings()
     save_rememberme();
     save_wokbdmouse();
     save_wol();
+    emit WritetoRdpconf("", "", "");
+    qDebug()<<"WritetoRdpconf... change bandwidth";
 }
 int SettingDialog::save_autologin()
 {
@@ -1109,6 +1111,7 @@ void SettingDialog::on_apply_display_button_clicked()
     save_bandwidth();
     save_multi_Monitor();
     save_audio();
+    save_settings();
 
     currentlanguage = ui->language->currentIndex();
     qDebug()<<"SettingDialog emit changeLanguage signal"<<ui->language->currentIndex();

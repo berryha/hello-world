@@ -1964,8 +1964,10 @@ void MainWindow::on_WritetoRdpconf_Main(QString xipaddr, QString xusername, QStr
     }
 #endif
 
-
-    qTmpstr=xusername;
+    if(xusername!="")
+        qTmpstr=xusername;
+    else
+        qTmpstr=ui->username->text();
     //qTmpstr.replace("\\","\\\\");
     qTmpstr.replace("\"","\\\"");
     qTmpstr.replace("\`","\\\`");
@@ -1976,7 +1978,12 @@ void MainWindow::on_WritetoRdpconf_Main(QString xipaddr, QString xusername, QStr
     sprintf(pcmd+cmdlen,"/usr/local/bin/sfreerdp /u:\"%s\" ",qTmpstr.toLatin1().data());
     cmdlen=strlen(pcmd);
 
-    qTmpstr=xpassword;
+    if(xpassword!="")
+        qTmpstr=xpassword;
+    else {
+        qTmpstr=ui->password->text();
+        qDebug()<<"WritetoRdpconf for bandwidth";
+    }
     //qTmpstr.replace("\\","\\\\");
     qTmpstr.replace("\"","\\\"");
     qTmpstr.replace("\`","\\\`");
@@ -2210,10 +2217,12 @@ void MainWindow::on_WritetoRdpconf_Main(QString xipaddr, QString xusername, QStr
     else
     {
         //qTmpstr=ui->targetcomboBox->currentText();
-        qTmpstr=xipaddr;
+        if(xipaddr!="")
+            qTmpstr=xipaddr;
+        else
+            qTmpstr=current_hostip;
         //qTmpstr.replace("\\","\\\\");
         qTmpstr.replace("\"","\\\"");
-
 
     }
     sprintf(pcmd+cmdlen,"/v:\"%s\"",qTmpstr.toLatin1().data());

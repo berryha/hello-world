@@ -145,6 +145,7 @@ signals:
     void autodetectRES(int multiM);
     //void Rememberme(int remember);
     void changeLanguage(int language);
+    void WritetoRdpconf(QString xipaddr, QString xusername, QString xpassword);
 protected: 
     int save_auto_power_on();
     int read_auto_power_on();

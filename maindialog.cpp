@@ -46,6 +46,7 @@ MainDialog::MainDialog(QWidget *parent) :
     connect(settingDialog,SIGNAL(autodetectRES(int)),this,SLOT(on_autodetectRES(int)));
 
     connect(advancewindow,SIGNAL(WritetoRdpconf(QString, QString, QString)),this,SLOT(on_WritetoRdpconf(QString, QString, QString)));
+    connect(settingDialog,SIGNAL(WritetoRdpconf(QString, QString, QString)),this,SLOT(on_WritetoRdpconf(QString, QString, QString)));
 
     mainUiInit();
 }
