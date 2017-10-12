@@ -1057,17 +1057,26 @@ void AdvanceDialog::on_updatepushButton_clicked()
         QByteArray folder_image = ui->ImageFolderBox->currentText().toLocal8Bit();
         QByteArray folder_imagename = ui->ImageFileBox->currentText().toLocal8Bit();
 
-        sprintf(updatecmdline,"AST_UpdateFW -c 1 -s %s/%s %s", folder_image.data(), folder_imagename.data(),"-t 0,2,3,5,6,4");
-        myProcess_network_update->start(updatecmdline);
-        updatewindow = new UpdateDialog(this);
-        updatewindow->setData(folder_imagename.data());
-        system("fw_setenv safe_mode 1");
-        updatewindow->setWindowTitle(tr("Firmware Updating..."));
-        updatewindow->setParent(this);
-        updatewindow->setFixedSize(384,91);
-        updatewindow->setStyleSheet("background-color:Pale gray;");
-        updatewindow->setWindowFlags(Qt::Window | Qt::WindowTitleHint | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint);
-        updatewindow->exec();
+//        sprintf(updatecmdline,"AST_UpdateFW -c 1 -s %s/%s %s", folder_image.data(), folder_imagename.data(),"-t 0,2,3,5,6,4");
+//        myProcess_network_update->start(updatecmdline);
+//        updatewindow = new UpdateDialog(this);
+//        updatewindow->setData(folder_imagename.data());
+//        system("fw_setenv safe_mode 1");
+//        updatewindow->setWindowTitle(tr("Firmware Updating..."));
+//        updatewindow->setParent(this);
+//        updatewindow->setFixedSize(384,91);
+//        updatewindow->setStyleSheet("background-color:Pale gray;");
+//        updatewindow->setWindowFlags(Qt::Window | Qt::WindowTitleHint | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint);
+//        updatewindow->exec();
+
+        sprintf(cmdline, "killall power; killall manager; killall killer; killall iowakeup");
+        system(cmdline);
+
+        sprintf(updatecmdline,"AST_UpdateFW -c 5274 -s %s/%s &", folder_image.data(), folder_imagename.data());
+        system(updatecmdline);
+
+        QApplication::quit();
+
     }
 }
 
